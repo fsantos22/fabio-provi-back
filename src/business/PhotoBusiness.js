@@ -108,36 +108,7 @@ class UserBusiness {
       throw new _Error(error.status, error.message);
     }
   }
-
-  //   async getLikesOnPhoto(input) {
-  //     try {
-  //       const photoDb = new PhotoDatabase();
-  //       const { photo_id } = input;
-
-  //      const result = await photoDb.countLikesOnPhoto({ photo_id });
-  //      if(!result){
-  //          throw new _Error(404, "Photo not found");
-  //      }
-  //      return result
-  //     } catch (error) {
-  //       throw new _Error(error.status, error.message);
-  //     }
-  //   }
-
-  //   async getLikesOnComment(input) {
-  //     try {
-  //       const photoDb = new PhotoDatabase();
-  //       const { comment_id } = input;
-
-  //      const result = await photoDb.countLikesOnPhoto({ comment_id });
-  //      if(!result){
-  //          throw new _Error(404, "Comment not found");
-  //      }
-  //      return result
-  //     } catch (error) {
-  //       throw new _Error(error.status, error.message);
-  //     }
-  //   }
+  
   async getPhotoById(photo_id) {
     try {
       const photoDb = new PhotoDatabase();
